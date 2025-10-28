@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Now 🌤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-cloud-sun"></i> Weather Now</h1>
+            <p>Get real-time weather updates for any city</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name..." class="search-input">
+                <button id="search-btn" class="search-btn">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            <div class="location-buttons">
+                <button id="current-location-btn" class="location-btn">
+                    <i class="fas fa-location-arrow"></i> Use Current Location
+                </button>
+            </div>
+        </section>
+
+        <!-- Weather Display -->
+        <section class="weather-display" id="weather-display" style="display: none;">
+            <div class="weather-card">
+                <div class="weather-header">
+                    <h2 id="city-name">City Name</h2>
+                    <p id="current-date">Loading date...</p>
+                </div>
+                
+                <div class="weather-main">
+                    <div class="temperature-section">
+                        <div class="temp-icon">
+                            <img id="weather-icon" src="" alt="Weather Icon">
+                            <span id="weather-description">Loading...</span>
+                        </div>
+                        <div class="temperature">
+                            <span id="current-temp">--</span>
+                            <span class="temp-unit">°C</span>
+                        </div>
+                    </div>
+                    
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-temperature-high"></i>
+                            <span>Feels like: <span id="feels-like">--°C</span></span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <span>Humidity: <span id="humidity">--%</span></span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <span>Wind: <span id="wind-speed">-- m/s</span></span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                            <span>Pressure: <span id="pressure">-- hPa</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading" style="display: none;">
+            <div class="loader"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+        <!-- Error State -->
+        <div class="error" id="error" style="display: none;">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p id="error-message">City not found. Please try again.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Created with 💖 by <strong>Sudharani Biradar</strong></p>
+            <p class="api-credit">Powered by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
