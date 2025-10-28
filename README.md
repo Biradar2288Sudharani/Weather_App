@@ -44,8 +44,10 @@ Developed as part of the **Aganitha Full Stack Developer Take Home Exercise (202
 
 ---
 
-## 📸 Preview
-*(Add a screenshot of your app here once hosted on CodeSandbox)*
+## 📸 App Preview
+![Weather App Screenshot](https://raw.githubusercontent.com/Biradar2288Sudharani/Weather_App/main/screenshot.png)
+
+
 
 ---
 
