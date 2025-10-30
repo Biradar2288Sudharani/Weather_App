@@ -47,9 +47,10 @@ Developed as part of the **Aganitha Full Stack Developer Take Home Exercise (202
 ## 📸 App Preview
 ![Weather App Screenshot](https://raw.githubusercontent.com/Biradar2288Sudharani/Weather_App/main/screenshot.png)
 
-
-
 ---
+
+check my weather app now in live !
+https://weathernowcom.netlify.app/
 
 ## ⚙️ Setup Instructions
 
